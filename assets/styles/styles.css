@@ -6445,24 +6445,11 @@ h1.title {
     margin: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 500px;
-    gap: 30px; }
-    @media all and (max-width: 1024px) {
-      .site-content-wrap.action-page .action-list-wr ul.list-actions {
-        grid-auto-rows: auto; } }
-    @media all and (max-width: 768px) {
-      .site-content-wrap.action-page .action-list-wr ul.list-actions {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px; } }
+    grid-template-columns: 1fr;
+    gap: 20px; }
     @media all and (max-width: 640px) {
       .site-content-wrap.action-page .action-list-wr ul.list-actions {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 26px; } }
-    @media all and (max-width: 480px) {
-      .site-content-wrap.action-page .action-list-wr ul.list-actions {
-        grid-template-columns: 1fr; } }
+        margin-bottom: 40px; } }
     .site-content-wrap.action-page .action-list-wr ul.list-actions li a {
       display: flex;
       align-items: center;
@@ -6473,7 +6460,8 @@ h1.title {
       .site-content-wrap.action-page .action-list-wr ul.list-actions li a img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        border-radius: 20px; }
 
 /*
 /Страница акции
