@@ -78,12 +78,127 @@ $(() => {
 	})
 	// Форма новая регистрация
 	$('a.new-registration').on('click', function () {
-		popup_form('user-new-regisration');
+		popup_form('user-new-regisration', null, afterOpenRegistration);
 		setTimeout(() => {
 			$('.user-top .icon-user').addClass('opened');
 		}, 301)
 		return false;
 	})
+
+	function afterOpenRegistration(el){
+
+		let $p = $('.form-user-new-regisration form');
+		let $name = $p.find('input[name="name-user"]');
+		let $email = $p.find('input[name="email"]');
+		let $pass = $p.find('input[name="pass"]');
+		let $passRep = $p.find('input[name="pass-repeat"]');
+		let isValid = true;
+
+		$pass.on('input', function (){
+			if($(this).val().length < 8){
+				setErrorString($(this), 'Минимальная длина поля должна быть не меньше 8 символов');
+				isValid = false;
+			} else {
+				unSetErrorString($(this));
+				isValid = true;
+				if(!passEqual($pass, $passRep)){
+					setErrorString($(this), 'Пароли не совпадают');
+					isValid = false;
+				} else {
+					unSetErrorString($passRep);
+					unSetErrorString($(this));
+					isValid = true;
+				}
+			}
+		})
+		$passRep.on('input', function (){
+			if($(this).val().length < 8){
+				setErrorString($(this), 'Минимальная длина поля должна быть не меньше 8 символов');
+				isValid = false;
+			} else {
+				unSetErrorString($(this));
+				isValid = true;
+				if(!passEqual($pass, $passRep)){
+					setErrorString($(this), 'Пароли не совпадают');
+					isValid = false;
+				} else {
+					unSetErrorString($(this));
+					unSetErrorString($pass);
+					isValid = true;
+				}
+			}
+		})
+
+
+		$('.form-user-new-regisration form').on('submit', function (){
+
+			if(!$name.val()){
+				isValid = false;
+				setErrorString($name, 'Пожалуйста, заполните поле');
+			} else {
+				unSetErrorString($name);
+				isValid = true;
+			}
+
+			let isValidEmail = validateEmail($email);
+			isValid = isValid && isValidEmail;
+
+			if($pass.val().length < 8){
+				isValid = false;
+				setErrorString($pass, 'Минимальная длина поля должна быть не меньше 8 символов');
+			}
+
+			if($passRep.val().length < 8) {
+				isValid = false;
+				setErrorString($passRep, 'Минимальная длина поля должна быть не меньше 8 символов');
+			}
+			if(!passEqual($pass, $passRep)){
+				setErrorString($passRep, 'Пароли не совпадают');
+			}
+
+			if(!isValid){
+				return false;
+
+			}
+
+			$(this).submit();
+
+			return false;
+		})
+	}
+
+	function setErrorString(el, text){
+		let errorString = $(`<small class="note">${text}</small>`);
+		if(!el.next(errorString).length){
+			el.after(errorString);
+			el.addClass('error')
+			errorString.show();
+			el.parent('.form-row').addClass('error');
+		}
+	}
+	function unSetErrorString(el){
+		el.next().remove();
+		el.parent('.form-row').removeClass('error');
+	}
+	function validateEmail(el) {
+		let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		if(reg.test(el.val()) === false) {
+			setErrorString(el, 'Пожалуйста, введите корректный адрес электронной почты')
+			return false;
+		} else {
+			unSetErrorString(el);
+			return true;
+		}
+	}
+
+	function passEqual($p1, $p2){
+		if($p1.val() === $p2.val()){
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 	// Всплывающая корзина
 	cart_popup()
 
@@ -572,7 +687,7 @@ function positionMenu() {
 	})
 }
 
-function popup_form(target, el) {
+function popup_form(target, el, callback) {
 	let pop_w = $('.popup-wrap');
 	let pop = $('.popup-wrap[data-popup="' + target + '"]');
 	let close = pop.find('.pop-close-button');
@@ -655,6 +770,10 @@ function popup_form(target, el) {
 			$('.menu-list-folders .item-folder, .menu-list-title').show();
 		}
 	})
+
+	if(typeof callback === 'function'){
+		callback.apply(pop_w);
+	}
 
 	return false;
 }

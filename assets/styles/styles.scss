@@ -3059,14 +3059,19 @@ html.hidden-scroll {
 
 .form-user-new-regisration form .form-row {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .form-user-new-regisration form .form-row .note {
     color: var(--color-red-hover);
-    font-size: 15px;
+    font-size: 11px;
     font-family: var(--circe-font);
     text-align: center;
-    line-height: 30px;
+    line-height: 1.5;
     display: none;
 }
 
