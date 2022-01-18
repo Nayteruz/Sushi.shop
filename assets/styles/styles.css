@@ -2548,7 +2548,6 @@ html.hidden-scroll {
 .form-user-new-regisration form .form-row .note {
   color: var(--color-red-hover);
   font-size: 11px;
-  line-height: 1.5;
   font-family: var(--circe-font);
   text-align: center;
   line-height: 1.5;
@@ -7359,6 +7358,77 @@ h1.title {
 
 /*
 Страница ресторана
+*/
+/*
+Страница завершения заказа
+*/
+@media all and (max-width: 768px) {
+  .site-content-wrap {
+    background: #fff; } }
+.site-content-wrap.order-complete-page .title-page {
+  font-size: 30px;
+  color: #161616;
+  font-weight: 700;
+  margin-bottom: 15px; }
+  @media all and (max-width: 1024px) {
+    .site-content-wrap.order-complete-page .title-page {
+      font-size: 25px; } }
+  @media all and (max-width: 640px) {
+    .site-content-wrap.order-complete-page .title-page {
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase; } }
+.site-content-wrap.order-complete-page .note {
+  color: #000;
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 20px; }
+.site-content-wrap.order-complete-page ul.order-text {
+  padding: 0;
+  margin: 0 0 30px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #000;
+  font-size: 17px; }
+  @media all and (max-width: 1024px) {
+    .site-content-wrap.order-complete-page ul.order-text {
+      font-size: 15px;
+      gap: 10px;
+      margin-bottom: 20px; } }
+  @media all and (max-width: 640px) {
+    .site-content-wrap.order-complete-page ul.order-text {
+      margin-bottom: 10px; } }
+  .site-content-wrap.order-complete-page ul.order-text li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px; }
+    .site-content-wrap.order-complete-page ul.order-text li .name {
+      font-weight: 300; }
+    .site-content-wrap.order-complete-page ul.order-text li .value {
+      font-weight: 700; }
+.site-content-wrap.order-complete-page .order-print {
+  background: #d64e54;
+  border: none;
+  padding: 5px 10px;
+  margin: 0;
+  outline: none;
+  min-width: 240px;
+  min-height: 42px;
+  color: #fff;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800; }
+  .site-content-wrap.order-complete-page .order-print:hover {
+    background: var(--color-red-hover); }
+  @media all and (max-width: 1024px) {
+    .site-content-wrap.order-complete-page .order-print {
+      font-size: 11px; } }
+
+/*
+/Страница завершения заказа
 */
 
 /*# sourceMappingURL=styles.css.map */

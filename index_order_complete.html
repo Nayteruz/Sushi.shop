@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="all" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" href="assets/styles/jquery.formstyler.css">
+    <link rel="stylesheet" href="assets/styles/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="assets/plugins/jquery-1.10.2.min.js"></script>
+    <script src="assets/plugins/slick.js"></script>
+    <script src="assets/plugins/jquery.formstyler.min.js"></script>
+    <script src="assets/plugins/jquery.inputmask.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</head>
+<body>
+<div class="block-overlay"></div>
+<div class="wrapper">
+    <div class="header-fantom"></div>
+    <div class="site-header-fix">
+        <header class="site-header">
+            <div class="header">
+                <a href="#" class="logo">
+                    <img src="assets/img/logo.svg" alt="Logo">
+                </a>
+                <div class="left-info">
+                    <div class="city-icon"><span>Звенигород</span></div>
+                    <div class="delivery">
+                        <a href="#" class="name">Доставка</a>
+                        <span class="time-delivery"> с 11:00 - 23:00</span>
+                    </div>
+                </div>
+                <div class="menu-button">
+                    <div class="menu-trigger">
+                        <span class="lines"></span>
+                        <span class="name-menu">МЕНЮ</span>
+                    </div>
+                    <div class="menu-popup"></div>
+                </div>
+                <nav class="menu-top">
+                    <ul>
+                        <li><a class="action" href="#"><span>Акции</span></a></li>
+                        <li class="menu-folder-mobile"><a href="#"><span>МЕНЮ</span></a></li>
+                        <li><a href="#"><span>Рестораны</span></a></li>
+                        <li class="menu-delivery-mobile"><a href="#"><span>Доставка</span></a></li>
+                        <li><a href="#"><span>Контакты</span></a></li>
+                        <li><a href="#" class="promo-popup"><span>Промокод</span></a></li>
+                    </ul>
+                </nav>
+                <div class="phones-top">
+                    <div class="phones-title-mobile">Прием заказов 11:00 - 23:00</div>
+                    <div class="phone">
+                        <a href="tel:+7 (495) 777-57-97" class="tel">+7 (495) 777-57-97</a>
+                        <span class="tel-text call-back">обратный звонок</span>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+7 (926) 317-50-05" class="tel">+7 (926) 317-50-05</a>
+                        <span class="tel-text">бронь столов</span>
+                    </div>
+                </div>
+                <div class="user-top avtorized">
+                    <span class="icon-user"></span>
+                </div>
+                <div class="button-call-back">
+                    <span class="icon"></span>
+                </div>
+                <div id="shop-cart" class="cart-top not-empty">
+                    <div class="cart-wr">
+							<span class="icon-cart">
+								<b class="cart-total-amount">4</b>
+							</span>
+                        <span class="cart-sum">15499</span>
+                        <span class="cart-currency">руб.</span>
+                    </div>
+                    <div class="cart-popup-wr">
+                        <span class="close-cart"></span>
+                        <div class="cart-popup">
+                            <div class="cart-title-empty">Ваша корзина пуста!</div>
+                            <div class="cart-title-mob-empty">Корзина пуста</div>
+                            <div class="cart-title-mob-not-empty">Корзина <span>(4)</span></div>
+                            <form action="#" class="cart-form">
+                                <div class="form-row item-cart-product">
+                                    <div class="cart-item-image">
+                                        <img src="assets/img/slider-menu/m2.jpg" alt="">
+                                    </div>
+                                    <div class="cart-item-info">
+                                        <div class="cart-item-top-info">
+                                            <div class="cart-item-text">
+                                                <a href="#" class="name">Калифорния</a>
+                                                <ul class="options">
+                                                    <li><span>Ласось / 30 г</span></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="cart-item-delete"></a>
+                                        </div>
+                                        <div class="cart-item-bot-info">
+                                            <div class="amount-cart-item">
+                                                <button class="amount-minus">-</button>
+                                                <input type="text" name="" class="cart-amount-value" value="1">
+                                                <button class="amount-plus">+</button>
+                                            </div>
+                                            <div class="cart-item-price">699 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row item-cart-product">
+                                    <div class="cart-item-image">
+                                        <img src="assets/img/slider-menu/m4.jpg" alt="">
+                                    </div>
+                                    <div class="cart-item-info">
+                                        <div class="cart-item-top-info">
+                                            <div class="cart-item-text">
+                                                <a href="#" class="name">Калифорния</a>
+                                                <ul class="options">
+                                                    <li><span>Ласось / 30 г</span></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="cart-item-delete"></a>
+                                        </div>
+                                        <div class="cart-item-bot-info">
+                                            <div class="amount-cart-item">
+                                                <button class="amount-minus">-</button>
+                                                <input type="text" name="" class="cart-amount-value" value="1">
+                                                <button class="amount-plus">+</button>
+                                            </div>
+                                            <div class="cart-item-price">699 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row item-cart-product">
+                                    <div class="cart-item-image">
+                                        <img src="assets/img/slider-menu/m6.jpg" alt="">
+                                    </div>
+                                    <div class="cart-item-info">
+                                        <div class="cart-item-top-info">
+                                            <div class="cart-item-text">
+                                                <a href="#" class="name">Калифорния</a>
+                                                <ul class="options">
+                                                    <li><span>Ласось / 30 г</span></li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="cart-item-delete"></a>
+                                        </div>
+                                        <div class="cart-item-bot-info">
+                                            <div class="amount-cart-item">
+                                                <button class="amount-minus">-</button>
+                                                <input type="text" name="" class="cart-amount-value" value="1">
+                                                <button class="amount-plus">+</button>
+                                            </div>
+                                            <div class="cart-item-price">699 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="cart-item-row promo-form">
+                                <input type="text" name="" value="" placeholder="Ввести промокод">
+                                <input type="submit" value="Применить">
+                            </div>
+                            <div class="cart-item-row total-sum">
+                                <span class="name">Сумма заказа</span>
+                                <span class="sum">15499 ₽</span>
+                            </div>
+                            <div class="cart-item-row submit">
+                                <input type="submit" value="Оформить заказ">
+                            </div>
+                            <div class="cart-min-sum not-define">Минимальная сумма заказа от 500 ₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu-popup-wrap"></div>
+        <div class="folder-slider-wrap">
+            <div class="name-slider">Меню</div>
+            <div class="folder-slider-list">
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m1.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Роллы</span>
+							<span class="name-v">Роллы</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m2.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Суши</span>
+							<span class="name-v">Суши</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m3.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Сашими</span>
+							<span class="name-v">Сашими</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m4.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Ассорти</span>
+							<span class="name-v">Ассорти</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m5.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Пицца</span>
+							<span class="name-v">Пицца</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m6.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Закуски</span>
+							<span class="name-v">Закуски</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m7.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Шашлычки</span>
+							<span class="name-v">Шашлычки</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m8.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Салаты</span>
+							<span class="name-v">Салаты</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m9.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Горячее</span>
+							<span class="name-v">Горячее</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m10.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Супы</span>
+							<span class="name-v">Супы</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m11.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Веганское</span>
+							<span class="name-v">Веганское</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m12.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Соусы</span>
+							<span class="name-v">Соусы</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m13.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Десерты</span>
+							<span class="name-v">Десерты</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m14.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Напитки</span>
+							<span class="name-v">Напитки</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m15.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Сигареты</span>
+							<span class="name-v">Сигареты</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m15.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Сигареты</span>
+							<span class="name-v">Сигареты</span>
+						</span>
+                </a>
+                <a href="#" class="item-folder">
+                    <span class="image"><img src="assets/img/slider-menu/m15.jpg" alt=""></span>
+                    <span class="name-wr">
+							<span class="name-w">Сигареты</span>
+							<span class="name-v">Сигареты</span>
+						</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="folder-slider-wrap not-slider">
+        <div class="name-slider">Меню</div>
+        <div class="folder-slider-list not-slider">
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m1.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Роллы</span>
+                    <span class="name-v">Роллы</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m2.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Суши</span>
+                    <span class="name-v">Суши</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m3.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Сашими</span>
+                    <span class="name-v">Сашими</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m4.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Ассорти</span>
+                    <span class="name-v">Ассорти</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m5.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Пицца</span>
+                    <span class="name-v">Пицца</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m6.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Закуски</span>
+                    <span class="name-v">Закуски</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m7.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Шашлычки</span>
+                    <span class="name-v">Шашлычки</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m8.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Салаты</span>
+                    <span class="name-v">Салаты</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m9.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Горячее</span>
+                    <span class="name-v">Горячее</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m10.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Супы</span>
+                    <span class="name-v">Супы</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m11.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Веганское</span>
+                    <span class="name-v">Веганское</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m12.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Соусы</span>
+                    <span class="name-v">Соусы</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m13.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Десерты</span>
+                    <span class="name-v">Десерты</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m14.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Напитки</span>
+                    <span class="name-v">Напитки</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m15.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Сигареты</span>
+                    <span class="name-v">Сигареты</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m15.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Сигареты</span>
+                    <span class="name-v">Сигареты</span>
+                </span>
+            </a>
+            <a href="#" class="item-folder">
+                <span class="image"><img src="assets/img/slider-menu/m15.jpg" alt=""></span>
+                <span class="name-wr">
+                    <span class="name-w">Сигареты</span>
+                    <span class="name-v">Сигареты</span>
+                </span>
+            </a>
+        </div>
+    </div>
+    <div class="site-content-wrap order-complete-page">
+        <div class="text-content ">
+            <h1 class="title-page">СПАСИБО ЗА ЗАКАЗ!</h1>
+            <div class="text">
+                <div class="note">Для подтверждения заказа, в течение 10 минут, с вами свяжется оператор.</div>
+                <ul class="order-text">
+                    <li><div class="name">Номер Вашего заказа:</div><div class="value">№ 86478</div></li>
+                    <li><div class="name">Дата заказа:</div><div class="value">01.08.19 17:15</div></li>
+                    <li><div class="name">Доставка:</div><div class="value">400 руб.</div></li>
+                    <li><div class="name">Сумма к оплате:</div><div class="value">9 150 руб.</div></li>
+                </ul>
+                <button class="order-print">распечатать бланк заказа</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer">
+            <div class="site-name-footer">
+                <a href="#" class="logo-bottom"><img src="assets/img/logo.svg" alt="Logo"></a>
+                <div class="site-copyright">© 2021 Ресторан «kioto»</div>
+                <div class="site-info"><a href="#">Политика конфиденциальности</a></div>
+            </div>
+            <nav class="menu-bottom">
+                <ul>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Рестораны</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="site-app-info">
+                <div class="app-title">Приложения для мобильных устройств:</div>
+                <ul class="app-icon-list">
+                    <li><a href="#"><img src="assets/img/google-app.png" alt="Google-app"></a></li>
+                    <li><a href="#"><img src="assets/img/apple-app.png" alt="Apple-app"></a></li>
+                </ul>
+                <ul class="soc-icon-list">
+                    <li><a href="#"><img src="assets/img/vk-icon.png" alt="VK"></a></li>
+                    <li><a href="#"><img src="assets/img/insta-icon.png" alt="Instagramm"></a></li>
+                </ul>
+            </div>
+            <div class="contacts-info">
+                <div class="phones-bottom">
+                    <div class="phone">
+                        <a href="tel:+7 (495) 777-57-97">+7 (495) 777-57-97</a>
+                        <span class="tel-info"></span>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+7 (926) 317-50-05">+7 (926) 317-50-05</a>
+                        <span class="tel-info">бронь столов</span>
+                    </div>
+                </div>
+                <div class="schedule-info">Прием заказов: c 11:00 до 23:00</div>
+                <div class="buttons">
+                    <a href="#" class="callback">обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Обратный звонок -->
+<div class="popup-wrap" data-popup="callback">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="form-call-back">
+                    <div class="title">Перезвоните мне</div>
+                    <form action="" class="form">
+                        <div class="form-row">
+                            <input type="text" name="" placeholder="Имя" value="">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" class="phone-num" name="" placeholder="Телефон" value="">
+                            <span class="note">Укажите номер телефона</span>
+                        </div>
+                        <div class="form-row submit"><input type="submit" value="Отправить заявку"></div>
+                    </form>
+                    <div class="text-note">
+                        Также вы можете сэкономить время, позвонив нам прямо сейчас:
+                    </div>
+                    <div class="text-num">
+                        <a href="tel:+7(495)777-57-97">+7(495)777-57-97</a>
+                    </div>
+                    <div class="text-agr">
+                        Отправляя заявку, я соглашаюсь с условиями <br/><a href="#">Политики конфиденциальности</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Обратный звонок -->
+<!-- Выбор города -->
+<div class="popup-wrap" data-popup="city-select">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="form-city-select">
+                    <div class="title">Укажите свой город</div>
+                    <ul class="list-cities">
+                        <li>
+                            <a href="#">Звенигород</a>
+                        </li>
+                        <li>
+                            <a href="#">Истра</a>
+                        </li>
+                        <li>
+                            <a href="#">Красногорск</a>
+                        </li>
+                        <li>
+                            <a href="#">Нахабино</a>
+                        </li>
+                        <li>
+                            <a href="#">Голицыно</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Выбор города -->
+<!-- Прокод -->
+<div class="popup-wrap" data-popup="promo-form">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="form-promo">
+                    <div class="title">Промокод</div>
+                    <form action="" class="form">
+                        <div class="form-row">
+                            <input type="text" name="" placeholder="Промокод" value="">
+                        </div>
+                        <div class="form-row submit"><input type="submit" value="Применить"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Прокод -->
+<!-- Вход/регистрация -->
+<div class="popup-wrap" data-popup="user-entry">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="form-user-entry">
+                    <div class="title">Вход и регистрация</div>
+                    <form action="" class="form">
+                        <div class="form-row">
+                            <input type="text" class="phone-num" name="" placeholder="Телефон" value="">
+                            <span class="note">Укажите номер телефона</span>
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="" placeholder="Пароль" value="">
+                        </div>
+                        <div class="form-row submit">
+                            <div class="links">
+                                <a href="#" class="restore-pass">Восстановить пароль</a>
+                                <a href="#" class="new-registration">Регистрация</a>
+                            </div>
+                            <input type="submit" value="Войти">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Вход/регистрация -->
+<!-- Восстановление пароля -->
+<div class="popup-wrap" data-popup="user-restore">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="form-user-restore">
+                    <div class="title">Восстановление пароля</div>
+                    <form action="" class="form">
+                        <div class="form-row">
+                            <input type="text" name="" placeholder="Email" value="">
+                        </div>
+                        <div class="form-row submit">
+                            <input type="submit" value="Продолжить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Восстановление пароля -->
+<!-- Восстановление пароля восстановить -->
+<div class="popup-wrap" data-popup="user-restore-pass">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="form-user-restore-pass">
+                    <!-- <div class="title">Восстановление пароля</div> -->
+                    <div class="note-text">На почту poluchatel@mail.ru был отправлен код для подтверждения</div>
+                    <form action="" class="form">
+                        <div class="form-row">
+                            <input type="password" name="" placeholder="Новый пароль" value="">
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="" placeholder="Повторить пароль" value="">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="" placeholder="Код" value="">
+                        </div>
+                        <div class="form-row submit">
+                            <input type="submit" value="Востановить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Восстановление пароля восстановить -->
+<!-- Регистрация пользователя -->
+<div class="popup-wrap" data-popup="user-new-regisration">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="form-user-new-regisration">
+                    <div class="title">Регистрация</div>
+                    <form action="" class="form">
+                        <div class="form-row">
+                            <input type="text" name="name-user" placeholder="Имя" value="">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" class="phone-num" name="" placeholder="Телефон" value="">
+                            <span class="note">Укажите номер телефона</span>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="email" placeholder="Email" value="">
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="pass" placeholder="Пароль" value="">
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="pass-repeat" placeholder="Повторить пароль" value="">
+                        </div>
+                        <div class="form-row submit">
+                            <input type="submit" value="Зарегистрироваться">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Регистрация пользователя -->
+
+
+<!-- Всплывающая карточка -->
+<div class="popup-wrap" data-popup="shop-card">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <span class="pop-close-button"><span></span></span>
+            <div class="popup-block-text">
+                <div class="card-popup">
+                    <a href="#" class="image">
+                        <img src="assets/img/card-popup.jpg" alt="Карточка товара">
+                    </a>
+                    <div class="product-info">
+                        <div class="product-scroll-info">
+                            <div class="name-product">
+                                <a href="#" class="name">Запеченный краб</a>
+                                <i class="icon-info"></i>
+                                <div class="popup-info">
+                                    <b>Пищевая ценность продукта на 100 г:</b><br/>
+                                    Белки — 14 г<br/>
+                                    Жиры — 8 г<br/>
+                                    Углеводы — 39 г<br/>
+                                    Энергетическая ценность — 280/1170 ккал<br/>
+                                    Вес — 400 г<br/>
+                                </div>
+                            </div>
+                            <div class="note-product">Краб-микс, авокадо, тобико, зеленый лук, 6 шт.</div>
+                            <ul class="options">
+                                <li><div class="text-info"><b>Пищевая ценность продукта на 100 г:</b><br/>Белки — 14 г<br/>Жиры — 8 г<br/>Углеводы — 39 г<br/>Энергетическая ценность — 280/1170 ккал<br/>Вес — 400 г</div></li>
+                                <li>
+                                    <ul class="select-list-option">
+                                        <li><span class="name">Цыпленок</span><a href="#" class="del"></a></li>
+                                        <li><span class="name">острая чоризо</span><a href="#" class="del"></a></li>
+                                        <li><span class="name">соус бургер, сладкий перец</span><a href="#" class="del"></a></li>
+                                        <li><span class="name repeat">красный лук</span><a href="#" class="repeat"></a></li>
+                                        <li><span class="name">томаты</span><a href="#" class="del"></a></li>
+                                        <li><span class="name">моцарелла, соус ранч, чеснок</span><a href="#" class="del"></a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="select-radio-option">
+                                        <li><a href="#" class="active">33 см</a></li>
+                                        <li><a href="#">45 см</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="card-set-title">Добавить в пиццу</div>
+                            <div class="card-set-list">
+                                <div class="item-set">
+                                    <a href="#" class="image-set">
+                                        <img src="assets/img/slider-menu/m5.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="name-set">Угорь капченный в пиццу</a>
+                                    <div class="price-set-wr"><span class="price-set">169</span><span class="cur">₽</span></div>
+                                </div>
+                                <div class="item-set">
+                                    <a href="#" class="image-set">
+                                        <img src="assets/img/slider-menu/m6.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="name-set">Перец чили</a>
+                                    <div class="price-set-wr"><span class="price-set">169</span><span class="cur">₽</span></div>
+                                </div>
+                                <div class="item-set active">
+                                    <a href="#" class="image-set">
+                                        <img src="assets/img/slider-menu/m7.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="name-set">Говяжьи колбаски</a>
+                                    <div class="price-set-wr"><span class="price-set">169</span><span class="cur">₽</span></div>
+                                </div>
+                                <div class="item-set">
+                                    <a href="#" class="image-set">
+                                        <img src="assets/img/slider-menu/m5.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="name-set">Угорь капченный в пиццу</a>
+                                    <div class="price-set-wr"><span class="price-set">169</span><span class="cur">₽</span></div>
+                                </div>
+                                <div class="item-set">
+                                    <a href="#" class="image-set">
+                                        <img src="assets/img/slider-menu/m6.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="name-set">Перец чили</a>
+                                    <div class="price-set-wr"><span class="price-set">169</span><span class="cur">₽</span></div>
+                                </div>
+                                <div class="item-set">
+                                    <a href="#" class="image-set">
+                                        <img src="assets/img/slider-menu/m7.jpg" alt="">
+                                    </a>
+                                    <a href="#" class="name-set">Говяжьи колбаски</a>
+                                    <div class="price-set-wr"><span class="price-set">169</span><span class="cur">₽</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-button-line">
+                            <button class="product-buy buy"><span class="text">Добавить в корзину за</span><span class="price">699</span><span class="cur">₽</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Всплывающая карточка -->
+
+<!-- Меню мобильная версия -->
+<div class="popup-wrap" data-popup="menu-mobile">
+    <div class="popup-block">
+        <div class="popup-block-inner">
+            <div class="popup-block-text">
+                <div class="form-menu-mobile">
+                    <ul class="menu-list-folders">
+                        <li class="menu-list-title"><span>Меню</span></li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m1.jpg" alt="title"></span>
+                                <span class="name">Роллы</span>
+                            </a>
+                        </li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m2.jpg" alt="title"></span>
+                                <span class="name">Суши</span>
+                            </a>
+                            <ul class="sub-list">
+                                <li class="title-menu"><span>Суши</span></li>
+                                <li>
+                                    <div class="item-prod">
+                                        <div class="image"><img src="assets/img/foto1.jpg" alt=""></div>
+                                        <div class="item-info">
+                                            <a href="#" class="name">Аригато</a>
+                                            <div class="note">Креветка темпура, лосось, огурец, авокадо, сыр, перец чили, микс соусов, кунжут, 6 шт.</div>
+                                            <div class="line">
+                                                <div class="price">445 ₽</div>
+                                                <button class="select add">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-prod">
+                                        <div class="image"><img src="assets/img/foto1.jpg" alt=""></div>
+                                        <div class="item-info">
+                                            <a href="#" class="name">Аригато</a>
+                                            <div class="note">Креветка темпура, лосось, огурец, авокадо, сыр, перец чили, микс соусов, кунжут, 6 шт.</div>
+                                            <div class="line">
+                                                <div class="price">445 ₽</div>
+                                                <button class="select add">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-prod">
+                                        <div class="image"><img src="assets/img/foto1.jpg" alt=""></div>
+                                        <div class="item-info">
+                                            <a href="#" class="name">Аригато</a>
+                                            <div class="note">Креветка темпура, лосось, огурец, авокадо, сыр, перец чили, микс соусов, кунжут, 6 шт.</div>
+                                            <div class="line">
+                                                <div class="price">445 ₽</div>
+                                                <button class="select add">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m3.jpg" alt="title"></span>
+                                <span class="name">Сашими</span>
+                            </a>
+                            <ul class="sub-list">
+                                <li class="title-menu"><span>Сашими</span></li>
+                                <li>
+                                    <div class="item-prod">
+                                        <div class="image"><img src="assets/img/foto1.jpg" alt=""></div>
+                                        <div class="item-info">
+                                            <a href="#" class="name">Аригато</a>
+                                            <div class="note">Креветка темпура, лосось, огурец, авокадо, сыр, перец чили, микс соусов, кунжут, 6 шт.</div>
+                                            <div class="line">
+                                                <div class="price">445 ₽</div>
+                                                <button class="select add">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-prod">
+                                        <div class="image"><img src="assets/img/foto1.jpg" alt=""></div>
+                                        <div class="item-info">
+                                            <a href="#" class="name">Аригато</a>
+                                            <div class="note">Креветка темпура, лосось, огурец, авокадо, сыр, перец чили, микс соусов, кунжут, 6 шт.</div>
+                                            <div class="line">
+                                                <div class="price">445 ₽</div>
+                                                <button class="select add">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-prod">
+                                        <div class="image"><img src="assets/img/foto1.jpg" alt=""></div>
+                                        <div class="item-info">
+                                            <a href="#" class="name">Аригато</a>
+                                            <div class="note">Креветка темпура, лосось, огурец, авокадо, сыр, перец чили, микс соусов, кунжут, 6 шт.</div>
+                                            <div class="line">
+                                                <div class="price">445 ₽</div>
+                                                <button class="select add">Выбрать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m4.jpg" alt="title"></span>
+                                <span class="name">Ассорти</span>
+                            </a>
+                        </li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m5.jpg" alt="title"></span>
+                                <span class="name">Пицца</span>
+                            </a>
+                        </li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m6.jpg" alt="title"></span>
+                                <span class="name">Закуски</span>
+                            </a>
+                        </li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m7.jpg" alt="title"></span>
+                                <span class="name">Шашлычки</span>
+                            </a>
+                        </li>
+                        <li class="item-folder">
+                            <a href="#" class="item-menu">
+                                <span class="image"><img src="assets/img/slider-menu/m8.jpg" alt="title"></span>
+                                <span class="name">Салаты</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

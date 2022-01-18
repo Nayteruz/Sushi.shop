@@ -9033,3 +9033,97 @@ h1.title {
 /*
 Страница ресторана
 */
+
+
+/*
+Страница завершения заказа
+*/
+
+.site-content-wrap {
+    @media all and(max-width:768px){
+        background:#fff;
+    }
+
+    &.order-complete-page {
+
+        .title-page {
+            font-size: 30px;
+            color: #161616;
+            font-weight: 700;
+            margin-bottom: 15px;
+            @media all and(max-width:1024px){
+                font-size: 25px;
+            }
+            @media all and(max-width:640px){
+                font-size: 20px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+        }
+        .note {
+            color: #000;
+            font-size: 17px;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        ul.order-text {
+            padding: 0;
+            margin: 0 0 30px 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+            color: #000;
+            font-size: 17px;
+            @media all and (max-width:1024px){
+                font-size: 15px;
+                gap:10px;
+                margin-bottom: 20px;
+            }
+            @media all and(max-width:640px){
+                gap:5px;
+                margin-bottom: 10px;
+            }
+
+
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                gap:5px 10px;
+                .name {
+                    font-weight: 300;
+                }
+                .value {
+                    font-weight:700;
+                }
+            }
+        }
+        .order-print {
+            background:#d64e54;
+            border:none;
+            padding: 5px 10px;
+            margin: 0;
+            outline: none;
+            min-width: 240px;
+            min-height: 42px;
+            color: #fff;
+            border-radius: 100px;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 800;
+            &:hover {
+                background:var(--color-red-hover);
+            }
+
+            @media all and (max-width:1024px){
+                font-size: 11px;
+            }
+
+        }
+    }
+}
+
+/*
+/Страница завершения заказа
+*/
