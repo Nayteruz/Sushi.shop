@@ -4401,9 +4401,9 @@ h1.title {
     display: none; }
 
   .folder-slider-wrap.not-slider {
-    display: block;
-    display: none;
-    /* сделать block если нужно показать категории */ }
+    display: block; }
+    .folder-slider-wrap.not-slider + .site-content-wrap {
+      display: none; }
 
   .content-sides {
     gap: 2px; }
@@ -7399,6 +7399,7 @@ h1.title {
       margin-bottom: 20px; } }
   @media all and (max-width: 640px) {
     .site-content-wrap.order-complete-page ul.order-text {
+      gap: 5px;
       margin-bottom: 10px; } }
   .site-content-wrap.order-complete-page ul.order-text li {
     display: flex;

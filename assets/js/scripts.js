@@ -624,6 +624,7 @@ function popup_menu_top() {
 
 function positionMenu() {
 	let header_height = 0, slider_folder_height = 0, header_fantom, header_fix, top = $(window).scrollTop();
+	let height_fantom = 0;
 	header_fix = $('.site-header-fix');
 	header_fantom = $('.header-fantom');
 	if (top > 1) {
@@ -642,7 +643,7 @@ function positionMenu() {
 			slider_folder_height = 0;
 		})
 
-		let height_fantom = header_height + slider_folder_height;
+		height_fantom = header_height + slider_folder_height;
 
 		header_fantom.css({'height': height_fantom});
 	}, 100)

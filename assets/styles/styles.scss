@@ -5193,7 +5193,9 @@ h1.title {
     }
     .folder-slider-wrap.not-slider {
         display: block;
-        display: none; /* сделать block если нужно показать категории */
+        & + .site-content-wrap {
+            display: none;
+        }
     }
     .content-sides {
         gap: 2px;
