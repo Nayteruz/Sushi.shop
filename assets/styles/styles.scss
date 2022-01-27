@@ -1632,6 +1632,8 @@ a.logo img {
 .top-slider-site {
     padding: 0;
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .slider-list {
@@ -2233,7 +2235,7 @@ a.item-name {
         grid-template-columns: repeat(4, 1fr);
     }
     .slider-list a .image img {
-        min-height: 500px;
+        //min-height: 500px;
     }
     .slider-list a .text-info {
         font-size: 35px;
@@ -2316,7 +2318,7 @@ a.item-name {
         margin-top: 20px;
     }
     .slider-list a .image img {
-        min-height: 450px;
+        //min-height: 450px;
     }
     .slider-list a .text-info {
         font-size: 30px;
@@ -3258,7 +3260,7 @@ html.hidden-scroll {
         width: 129px;
     }
     .slider-list a .image img {
-        min-height: 400px;
+        //min-height: 400px;
     }
     .slider-list a .text-info {
         font-size: 30px;
@@ -3826,7 +3828,7 @@ html.hidden-scroll {
         margin-right: 9px;
     }
     .slider-list a .image img {
-        min-height: 420px;
+        //min-height: 420px;
     }
     .slider-list a .text-info > div {
         text-align: center;
@@ -4017,7 +4019,7 @@ html.hidden-scroll {
 
 @media all and (max-width: 360px) {
     .slider-list a .image img {
-        min-height: 420px;
+        //min-height: 420px;
     }
 }
 

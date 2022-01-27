@@ -1333,7 +1333,9 @@ a.logo img {
 
 .top-slider-site {
   padding: 0;
-  position: relative; }
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 .slider-list a {
   display: flex;
@@ -1838,9 +1840,6 @@ a.item-name {
   .list-items .items {
     grid-template-columns: repeat(4, 1fr); }
 
-  .slider-list a .image img {
-    min-height: 500px; }
-
   .slider-list a .text-info {
     font-size: 35px; }
 
@@ -1911,9 +1910,6 @@ a.item-name {
     justify-content: space-between;
     padding-top: 29px;
     margin-top: 20px; }
-
-  .slider-list a .image img {
-    min-height: 450px; }
 
   .slider-list a .text-info {
     font-size: 30px; }
@@ -2710,9 +2706,6 @@ html.hidden-scroll {
   .site-name-footer a.logo-bottom img {
     width: 129px; }
 
-  .slider-list a .image img {
-    min-height: 400px; }
-
   .slider-list a .text-info {
     font-size: 30px;
     padding-left: 40px;
@@ -3229,9 +3222,6 @@ html.hidden-scroll {
     font-size: 25px;
     padding: 6px 9px 5px;
     margin-right: 9px; }
-
-  .slider-list a .image img {
-    min-height: 420px; }
 
   .slider-list a .text-info > div {
     text-align: center; }
