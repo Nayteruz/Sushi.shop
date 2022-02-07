@@ -1200,7 +1200,6 @@ a.logo img {
     line-height: 0;
     padding: 0;
     margin: 0;
-
 }
 
 .cart-popup-wr .item-cart-product .amount-cart-item button.amount-minus {
@@ -1342,6 +1341,33 @@ a.logo img {
     align-items: stretch;
     justify-content: space-between;
     gap: 5px;
+
+    a.del-promo {
+        display: none;
+        width: 46px;
+        height: 34px;
+        background: url(../img/cart-delete.svg) 50% 50% no-repeat;
+        flex: 0 0 46px;
+
+        &:hover {
+            background-image: url(../img/cart-delete-red.svg);
+        }
+    }
+
+    &.active {
+        input[type="submit"] {
+            display: none;
+        }
+
+        input[type="text"] {
+            pointer-events: none;
+        }
+
+        a.del-promo {
+            display: block;
+        }
+    }
+
 }
 
 .cart-popup-wr .promo-form input[type="text"] {
@@ -1441,7 +1467,6 @@ a.logo img {
 
 .cart-popup-wr .cart-item-row.submit.not-define + .cart-min-sum {
     display: block !important;
-    padding-top: 22px;
 }
 
 .cart-popup-wr .cart-min-sum {
@@ -2388,7 +2413,6 @@ html.hidden-scroll {
     padding-bottom: 70px;
     transform: translateY(70px);
     display: none;
-
 }
 
 .popup-wrap .popup-block {
@@ -3063,11 +3087,11 @@ html.hidden-scroll {
 
 /* всплывающий блок регистрация */
 
-.form-user-new-regisration {
+.form-user-new-registration {
     padding: 8px 0px 13px 0px;
 }
 
-.form-user-new-regisration .title {
+.form-user-new-registration .title {
     color: #000000;
     margin: 0px 0px 31px 0px;
     text-transform: uppercase;
@@ -3076,7 +3100,7 @@ html.hidden-scroll {
     font-family: var(--circe-font);
 }
 
-.form-user-new-regisration form {
+.form-user-new-registration form {
     padding: 0;
     margin: 0 0 0px 0;
     display: flex;
@@ -3084,11 +3108,11 @@ html.hidden-scroll {
     justify-content: center;
 }
 
-.form-user-new-regisration form input {
+.form-user-new-registration form input {
     outline: none;
 }
 
-.form-user-new-regisration form .form-row {
+.form-user-new-registration form .form-row {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -3097,7 +3121,7 @@ html.hidden-scroll {
     justify-content: flex-start;
 }
 
-.form-user-new-regisration form .form-row .note {
+.form-user-new-registration form .form-row .note {
     color: var(--color-red-hover);
     font-size: 11px;
     font-family: var(--circe-font);
@@ -3106,7 +3130,7 @@ html.hidden-scroll {
     display: none;
 }
 
-.form-user-new-regisration form .form-row input {
+.form-user-new-registration form .form-row input {
     border: 1px solid rgb(215, 215, 215);
     background: #fff;
     width: 100%;
@@ -3119,25 +3143,25 @@ html.hidden-scroll {
     font-family: var(--circe-font);
 }
 
-.form-user-new-regisration form .form-row input:hover,
-.form-user-new-regisration form .form-row input:active {
+.form-user-new-registration form .form-row input:hover,
+.form-user-new-registration form .form-row input:active {
     border-color: #737373;
 }
 
-.form-user-new-regisration form .form-row input::placeholder {
+.form-user-new-registration form .form-row input::placeholder {
     color: #a4a4a4;
 }
 
-.form-user-new-regisration form .form-row.error .note {
+.form-user-new-registration form .form-row.error .note {
     display: block;
 }
 
-.form-user-new-regisration form .form-row.error input {
+.form-user-new-registration form .form-row.error input {
     border-color: var(--color-red-hover);
     color: var(--color-red-hover);
 }
 
-.form-user-new-regisration form .form-row.submit {
+.form-user-new-registration form .form-row.submit {
     margin-bottom: 0;
     margin-top: 10px;
     display: flex;
@@ -3145,7 +3169,7 @@ html.hidden-scroll {
     justify-content: space-between;
 }
 
-.form-user-new-regisration form .form-row.submit input[type="submit"] {
+.form-user-new-registration form .form-row.submit input[type="submit"] {
     color: #fff;
     font-weight: 700;
     font-size: 15px;
@@ -3164,7 +3188,7 @@ html.hidden-scroll {
     border: none;
 }
 
-.form-user-new-regisration form .form-row.submit input[type="submit"]:hover {
+.form-user-new-registration form .form-row.submit input[type="submit"]:hover {
     background: var(--color-red-hover);
 }
 
@@ -3604,7 +3628,7 @@ html.hidden-scroll {
     }
     .form-user-entry .title,
     .form-user-restore .title,
-    .form-user-new-regisration .title {
+    .form-user-new-registration .title {
         font-size: 20px;
         margin-bottom: 20px;
     }
@@ -4644,7 +4668,7 @@ h1.title {
 .list-history .name-list {
     display: grid;
     align-items: center;
-    grid-template-columns: auto auto auto auto 1fr;
+    grid-template-columns: auto auto auto auto auto 1fr;
     justify-content: flex-start;
 }
 
@@ -4661,7 +4685,12 @@ h1.title {
     color: #000;
     font-weight: 800;
     font-size: 15px;
-    margin-right: 60px;
+    margin-right: 20px;
+}
+
+.list-history .status-order {
+    display: block;
+    margin-right: 25px;
 }
 
 .list-history .info-order {
@@ -4728,6 +4757,36 @@ h1.title {
 
 .repeat-order:active {
     background: #c34146;
+}
+
+.status-order {
+    border-radius: 25px;
+    min-width: 53px;
+    min-height: 16px;
+    padding: 3px 7px 0;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 8px;
+    font-weight: 800;
+    background: #d64e54;
+    margin-left: auto;
+    border: none;
+    text-transform: uppercase;
+    margin-top: -3px;
+    font-family: var(--circe-font);
+}
+
+.status-order.processing:after {
+    content: "В работе";
+}
+
+.status-order.completed {
+    background: #4ed65c;
+}
+
+.status-order.completed:after {
+    content: "Выполнен";
 }
 
 .list-product-order {
@@ -5365,6 +5424,9 @@ h1.title {
         font-size: 13px;
         margin: 0px 0px 0px 0px;
     }
+    .list-history .status-order {
+       display: none;
+    }
     .list-history .info-order {
         font-size: 15px;
         justify-self: flex-end;
@@ -5986,6 +6048,7 @@ h1.title {
         border: 1px solid #ececec;
         border-radius: 20px;
         padding: 0px 0px 0px 0px;
+        margin-bottom: 40px; ///?
         @media all and (max-width:640px){
             border:none;
             gap:5px;
@@ -9156,6 +9219,39 @@ h1.title {
         }
     }
 }
+
+//sweet alert styles
+.swal-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    min-height: 58px;
+    border-radius: 100px;
+    background:#d64e54;
+    box-shadow: 0px 7px 18px 0px rgba(240, 74, 81, 0.4) !important;
+    border:none;
+    outline: none;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: var(--circe-font);
+    &:hover {
+        background:var(--color-red-hover) !important;
+    }
+    @media all and(max-width:640px){
+        min-height: 48px;
+    }
+}
+
+.swal-modal {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.18);
+    padding: 28px 40px 28px;
+}
+
 
 /*
 /Страница завершения заказа

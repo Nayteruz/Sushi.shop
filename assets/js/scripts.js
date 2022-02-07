@@ -78,7 +78,7 @@ $(() => {
 	})
 	// Форма новая регистрация
 	$('a.new-registration').on('click', function () {
-		popup_form('user-new-regisration', null, afterOpenRegistration);
+		popup_form('user-new-registration', null, afterOpenRegistration);
 		setTimeout(() => {
 			$('.user-top .icon-user').addClass('opened');
 		}, 301)
@@ -87,7 +87,7 @@ $(() => {
 
 	function afterOpenRegistration(el){
 
-		let $p = $('.form-user-new-regisration form');
+		let $p = $('.form-user-new-registration form');
 		let $name = $p.find('input[name="name-user"]');
 		let $email = $p.find('input[name="email"]');
 		let $pass = $p.find('input[name="pass"]');
@@ -130,7 +130,7 @@ $(() => {
 		})
 
 
-		$('.form-user-new-regisration form').on('submit', function (){
+		$('.form-user-new-registration form').on('submit', function (){
 
 			if(!$name.val()){
 				isValid = false;
