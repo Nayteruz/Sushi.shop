@@ -2415,6 +2415,14 @@ html.hidden-scroll {
     transform: translateY(0px);
     display: none;
 }
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    .popup-wrap {
+        top: -70px;
+        padding-bottom: 70px;
+        transform: translateY(70px);
+    }
+}
 
 .popup-wrap .popup-block {
     width: 100%;
@@ -2452,6 +2460,7 @@ html.hidden-scroll {
     border-radius: 15px;
     width: 90px;
     height: 58px;
+    z-index: 999;
 }
 
 .popup-wrap .pop-close-button > span {
@@ -3628,6 +3637,11 @@ html.hidden-scroll {
         background: none;
         z-index: 1;
         display: none;
+    }
+    @supports (-webkit-touch-callout: none) {
+        .popup-wrap .pop-close-button {
+            top: 80px !important;
+        }
     }
     .form-user-entry .title,
     .form-user-restore .title,
@@ -5921,9 +5935,14 @@ h1.title {
         position: fixed;
         left: 0;
         right: 0;
-        top: calc(100vh - 97px);
+        bottom: 0;
         z-index: 9999;
 
+    }
+    @supports (-webkit-touch-callout: none) {
+        .card-popup .product-info .product-button-line {
+            bottom: 70px;
+        }
     }
 }
 
