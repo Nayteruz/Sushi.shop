@@ -1069,6 +1069,7 @@ a.logo img {
     top: 0;
     width: 58px;
     height: 68px;
+    z-index: 999;
     background: url(../img/icon-close-cart.svg) 50% 50% no-repeat;
     display: none;
 }
@@ -5919,7 +5920,7 @@ h1.title {
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 2;
+        z-index: 9999;
 
     }
 }
