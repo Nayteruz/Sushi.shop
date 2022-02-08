@@ -1971,14 +1971,14 @@ html.hidden-scroll {
   position: fixed;
   left: 0;
   right: 0;
-  top: -70px;
-  bottom: 0;
+  top: 0px;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.45);
   z-index: 100;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 70px;
-  transform: translateY(70px);
+  padding-bottom: 0px;
+  transform: translateY(0px);
   display: none; }
 
 .popup-wrap .popup-block {
@@ -5012,7 +5012,7 @@ h1.title {
 
   .card-popup .product-info .product-button-line {
     background: #fff;
-    position: sticky;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
