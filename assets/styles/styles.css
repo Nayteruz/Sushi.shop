@@ -3391,6 +3391,9 @@ html.hidden-scroll {
 
   .slider-list a .text-info h3.title {
     font-size: 32px; } }
+@supports (-webkit-touch-callout: none) {
+  .cart-popup-wr .cart-popup {
+    padding-bottom: 70px; } }
 @media all and (max-width: 480px) {
   .site-header {
     min-height: 68px; }
@@ -5029,8 +5032,7 @@ h1.title {
 
   @supports (-webkit-touch-callout: none) {
     .card-popup .product-info .product-button-line {
-      bottom: auto;
-      top: calc(100vh - 116px); } } }
+      bottom: 116px; } } }
 @media all and (max-width: 640px) {
   .popup-wrap[data-popup="shop-card"] .popup-block {
     padding-top: 0; }
@@ -5046,7 +5048,7 @@ h1.title {
 
   @supports (-webkit-touch-callout: none) {
     .card-popup .product-info .product-button-line {
-      top: calc(100vh - 97px); } } }
+      bottom: 97px; } } }
 @media all and (max-width: 480px) {
   .popup-wrap[data-popup="shop-card"] .popup-block {
     padding-top: 0; }
