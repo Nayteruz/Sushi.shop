@@ -3587,6 +3587,8 @@ html.hidden-scroll {
         top: 100px;
         margin: 0;
         width: auto;
+        max-height: 100vh;
+        overflow: auto;
     }
     .cart-top .cart-popup-wr .cart-popup {
         border-radius: 0;
@@ -5919,7 +5921,7 @@ h1.title {
         position: fixed;
         left: 0;
         right: 0;
-        bottom: 0;
+        top: calc(100vh - 97px);
         z-index: 9999;
 
     }
