@@ -3640,7 +3640,7 @@ html.hidden-scroll {
     }
     @supports (-webkit-touch-callout: none) {
         .popup-wrap .pop-close-button {
-            top: 80px !important;
+            //top: 80px !important;
         }
     }
     .form-user-entry .title,
@@ -5941,7 +5941,7 @@ h1.title {
     }
     @supports (-webkit-touch-callout: none) {
         .card-popup .product-info .product-button-line {
-            bottom: 70px;
+            bottom: 97px;
         }
     }
 }
