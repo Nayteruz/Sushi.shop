@@ -5029,7 +5029,8 @@ h1.title {
 
   @supports (-webkit-touch-callout: none) {
     .card-popup .product-info .product-button-line {
-      bottom: 97px; } } }
+      bottom: auto;
+      top: calc(100vh - 116px); } } }
 @media all and (max-width: 640px) {
   .popup-wrap[data-popup="shop-card"] .popup-block {
     padding-top: 0; }
@@ -5041,7 +5042,11 @@ h1.title {
     grid-template-columns: repeat(4, 1fr); }
 
   .card-popup .product-info .product-button-line {
-    min-height: 97px; } }
+    min-height: 97px; }
+
+  @supports (-webkit-touch-callout: none) {
+    .card-popup .product-info .product-button-line {
+      top: calc(100vh - 97px); } } }
 @media all and (max-width: 480px) {
   .popup-wrap[data-popup="shop-card"] .popup-block {
     padding-top: 0; }
