@@ -3029,7 +3029,6 @@ html.hidden-scroll {
     right: 0;
     width: 58px;
     background: none;
-    z-index: 1;
     display: none; }
 
   .form-user-entry .title,
