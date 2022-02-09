@@ -2413,24 +2413,15 @@ html.hidden-scroll {
     position: fixed;
     left: 0;
     right: 0;
-    top: 0px;
+    top: 0;
     height: 100%;
     background: rgba(0, 0, 0, 0.45);
     z-index: 100;
     overflow-y: auto;
     -webkit-overflow-scrolling:touch;
-    padding-bottom: 0px;
-    transform: translateY(0px);
     display: none;
 }
-@supports (-webkit-touch-callout: none) {
-    /* CSS specific to iOS devices */
-    .popup-wrap {
-        top: -70px;
-        padding-bottom: 70px;
-        transform: translateY(70px);
-    }
-}
+
 
 .popup-wrap .popup-block {
     width: 100%;
@@ -3646,11 +3637,7 @@ html.hidden-scroll {
         background: none;
         display: none;
     }
-    @supports (-webkit-touch-callout: none) {
-        .popup-wrap .pop-close-button {
-            //top: 80px !important;
-        }
-    }
+
     .form-user-entry .title,
     .form-user-restore .title,
     .form-user-new-registration .title {
@@ -5918,7 +5905,7 @@ h1.title {
     }
     .popup-wrap[data-popup="shop-card"] .popup-block-inner {
         max-height: 100%;
-        height: 100vh;
+        height: 100%;
     }
     .card-popup .product-info {
         box-shadow: none;
@@ -5948,11 +5935,7 @@ h1.title {
         z-index: 9999;
 
     }
-    @supports (-webkit-touch-callout: none) {
-        .popup-wrap .product-button-line {
-            bottom: 116px;
-        }
-    }
+
 }
 
 @media all and (max-width: 640px) {
@@ -5968,11 +5951,7 @@ h1.title {
     .popup-wrap .product-button-line {
         min-height: 97px;
     }
-    @supports (-webkit-touch-callout: none) {
-        .popup-wrap .product-button-line {
-            bottom: 97px;
-        }
-    }
+
 }
 
 @media all and (max-width: 480px) {
