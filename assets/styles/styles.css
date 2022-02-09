@@ -2679,7 +2679,7 @@ html.hidden-scroll {
 .item-prod .item-info {
   text-align: left;
   padding: 5px 0px 0px 0px;
-  flex: 1 1; }
+  flex: 1 1 auto; }
 
 .item-prod .item-info .name {
   color: #000000;
