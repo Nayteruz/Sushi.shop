@@ -2998,7 +2998,7 @@ html.hidden-scroll {
     top: 100px;
     margin: 0;
     width: auto;
-    max-height: 100vh;
+    max-height: 100%;
     overflow: auto; }
 
   .cart-top .cart-popup-wr .cart-popup {
