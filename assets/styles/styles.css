@@ -2028,8 +2028,7 @@ html.hidden-scroll {
   background: #f9f9f9;
   border-radius: 15px;
   width: 90px;
-  height: 58px;
-  z-index: 999; }
+  height: 58px; }
 
 .popup-wrap .pop-close-button > span {
   display: block;
@@ -4971,8 +4970,6 @@ h1.title {
     box-shadow: 0px 7px 18px 0px rgba(240, 74, 81, 0.4); }
     .popup-wrap .product-button-line .product-buy.buy:hover, .popup-wrap .product-button-line .product-buy.buy:active {
       background: var(--color-red-hover); }
-    .popup-wrap .product-button-line .product-buy.buy:active {
-      background: var(--color-red-hover); }
 
 @media all and (max-width: 1024px) {
   .popup-wrap[data-popup="shop-card"] .pop-close-button {
@@ -4983,7 +4980,8 @@ h1.title {
     z-index: 1;
     border-radius: 6px;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
-    background: #fff; }
+    background: #fff;
+    z-index: 999; }
 
   .popup-wrap[data-popup="shop-card"] .pop-close-button > span {
     width: 100%; }

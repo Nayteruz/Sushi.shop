@@ -2468,7 +2468,7 @@ html.hidden-scroll {
     border-radius: 15px;
     width: 90px;
     height: 58px;
-    z-index: 999;
+    //z-index: 2;
 }
 
 .popup-wrap .pop-close-button > span {
@@ -5886,6 +5886,7 @@ h1.title {
         border-radius: 6px;
         box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
         background: #fff;
+        z-index: 999;
     }
     .popup-wrap[data-popup="shop-card"] .pop-close-button > span {
         width: 100%;
