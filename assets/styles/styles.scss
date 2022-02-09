@@ -5942,7 +5942,8 @@ h1.title {
         position: fixed;
         left: 0;
         right: 0;
-        bottom: 0;
+        top: 100%;
+        transform: translateY(-100%);
         z-index: 9999;
 
     }
