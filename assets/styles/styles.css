@@ -5031,7 +5031,7 @@ h1.title {
     left: 0;
     right: 0;
     top: 100%;
-    transform: translateY();
+    transform: translateY(-100%);
     z-index: 9999; }
 
   @supports (-webkit-touch-callout: none) {
