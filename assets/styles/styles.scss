@@ -2398,7 +2398,15 @@ a.item-name {
 /* всплывающий блок */
 html.hidden-scroll {
     overflow: hidden;
-
+    position: relative;
+    touch-action: none;
+    -ms-touch-action: none;
+    body {
+        overflow: hidden;
+        position: relative;
+        touch-action: none;
+        -ms-touch-action: none;
+    }
 }
 
 .popup-wrap {
@@ -5832,7 +5840,7 @@ h1.title {
 }
 
 
-.card-popup .product-info .product-button-line {
+.popup-wrap .product-button-line {
     margin-top: auto;
     background: #fff;
     position: relative;
@@ -5844,7 +5852,7 @@ h1.title {
     padding: 20px;
 }
 
-.card-popup .product-info .product-buy {
+.popup-wrap .product-button-line .product-buy {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -5859,21 +5867,14 @@ h1.title {
     gap: 5px;
     min-width: 342px;
     min-height: 56px;
+    &.buy {
+        background: #d64e54;
+        box-shadow: 0px 7px 18px 0px rgba(240, 74, 81, 0.4);
+        &:hover, &:active {
+            background: var(--color-red-hover);
+        }
+    }
 }
-
-.card-popup .product-info .product-buy.buy {
-    background: #d64e54;
-    box-shadow: 0px 7px 18px 0px rgba(240, 74, 81, 0.4);
-}
-
-.card-popup .product-info .product-buy.buy:hover {
-    background: var(--color-red-hover);
-}
-
-.card-popup .product-info .product-buy.buy:active {
-    background: var(--color-red-hover);
-}
-
 
 @media all and (max-width: 1024px) {
     .popup-wrap[data-popup="shop-card"] .pop-close-button {
@@ -5935,7 +5936,7 @@ h1.title {
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .card-popup .product-info .product-button-line {
+    .popup-wrap .product-button-line {
         background: #fff;
         position: fixed;
         left: 0;
@@ -5945,7 +5946,7 @@ h1.title {
 
     }
     @supports (-webkit-touch-callout: none) {
-        .card-popup .product-info .product-button-line {
+        .popup-wrap .product-button-line {
             bottom: 116px;
         }
     }
@@ -5961,11 +5962,11 @@ h1.title {
     .card-popup .product-info .card-set-list {
         grid-template-columns: repeat(4, 1fr);
     }
-    .card-popup .product-info .product-button-line {
+    .popup-wrap .product-button-line {
         min-height: 97px;
     }
     @supports (-webkit-touch-callout: none) {
-        .card-popup .product-info .product-button-line {
+        .popup-wrap .product-button-line {
             bottom: 97px;
         }
     }

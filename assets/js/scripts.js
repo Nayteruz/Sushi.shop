@@ -1003,27 +1003,32 @@ function popupCard(el) {
 		pop_w.fadeOut(200, function () {
 			$('html').removeClass('hidden-scroll');
 			removeOpenClass();
+			transformPopButton(false, pop);
 		})
 	} else {
 		pop.fadeOut(200);
 		$('html').removeClass('hidden-scroll');
 		removeOpenClass();
+		transformPopButton(false, pop);
 		return false;
 	}
 
 	$('html').addClass('hidden-scroll');
 	pop.fadeIn(200);
+	transformPopButton(true, pop);
 
 	close.on('click', function () {
 		pop.fadeOut(200);
 		$('html').removeClass('hidden-scroll');
 		removeOpenClass();
+		transformPopButton(false, pop);
 	})
 	$(document).on('click', '.popup-block', function (e) {
 		if (!$(e.target).closest('.popup-block-inner').length) {
 			pop.fadeOut(200);
 			$('html').removeClass('hidden-scroll');
 			removeOpenClass();
+			transformPopButton(false, pop);
 
 			$('.menu-list-folders, .menu-list-folders .item-folder').removeClass('active');
 			$('.menu-list-folders .item-folder, .menu-list-title').show();
@@ -1031,6 +1036,22 @@ function popupCard(el) {
 	})
 
 	return false;
+}
+
+function transformPopButton(action, item){
+	let $b = item.find('.product-button-line');
+	if(action){
+		resizeController([-Infinity, 768], function () {
+			item.find('.popup-block-inner').prepend($b);
+		})
+		return;
+	}
+
+	resizeController([769, Infinity], function () {
+		item.find('.product-info').append($b);
+	})
+
+	return;
 }
 
 function popupCardEvents() {
