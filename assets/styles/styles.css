@@ -2016,7 +2016,7 @@ html.hidden-scroll {
   width: 100%;
   position: relative;
   text-align: center;
-  max-height: 100vh;
+  max-height: 100%;
   overflow-y: auto; }
 
 .popup-wrap .pop-close-button {
@@ -2678,7 +2678,8 @@ html.hidden-scroll {
 
 .item-prod .item-info {
   text-align: left;
-  padding: 5px 0px 0px 0px; }
+  padding: 5px 0px 0px 0px;
+  flex: 1 1; }
 
 .item-prod .item-info .name {
   color: #000000;
@@ -3113,7 +3114,7 @@ html.hidden-scroll {
 
   .popup-wrap[data-popup="menu-mobile"] .popup-block-text {
     padding: 0;
-    max-height: calc(100vh - 100px); }
+    max-height: calc(100% - 100px); }
 
   .menu-list-folders {
     padding: 0;
@@ -3451,7 +3452,7 @@ html.hidden-scroll {
     grid-template-columns: repeat(2, 1fr); }
 
   .popup-wrap[data-popup="menu-mobile"] .popup-block-text {
-    max-height: calc(100vh - 68px); } }
+    max-height: calc(100% - 68px); } }
 @media all and (max-width: 359px) {
   .form-user-entry form .form-row.submit {
     flex-direction: column;
@@ -7295,7 +7296,7 @@ h1.title {
     @media all and (max-width: 640px) {
       .popup-wrap[data-popup="restoran"] .popup-block-inner .popup-block-text {
         border-radius: 15px;
-        max-height: calc(100vh - 60px);
+        max-height: calc(100% - 60px);
         padding-top: 18px; } }
 
 .form-restoran .title {
