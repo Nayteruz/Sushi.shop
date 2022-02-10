@@ -3739,7 +3739,6 @@ html.hidden-scroll {
 
     }
     .menu-list-folders {
-        padding: 0;
         margin: 0;
         list-style: none;
         display: flex;
@@ -3829,7 +3828,7 @@ html.hidden-scroll {
     }
     .menu-list-folders .item-folder.active > ul.sub-list {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         background: #fff;
     }
     .menu-list-folders .item-folder.active > a.item-menu {
