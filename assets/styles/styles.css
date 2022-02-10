@@ -1987,10 +1987,6 @@ html.hidden-scroll {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none; }
-  @media all and (max-width: 768px) {
-    .popup-wrap {
-      height: 99%;
-      transform: translate3d(0, 0, 0); } }
 
 .popup-wrap .popup-block {
   width: 100%;
@@ -7532,5 +7528,8 @@ h1.title {
 /*
 /Страница завершения заказа
 */
+html, body {
+  height: 100%;
+  overflow: auto; }
 
 /*# sourceMappingURL=styles.css.map */

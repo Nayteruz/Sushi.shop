@@ -2421,8 +2421,8 @@ html.hidden-scroll {
     -webkit-overflow-scrolling:touch;
     display: none;
     @media all and (max-width:768px){
-        height: 99%;
-        transform: translate3d(0,0,0);
+        //height: 99%;
+        //transform: translate3d(0,0,0);
     }
 
 }
@@ -9280,3 +9280,8 @@ h1.title {
 /*
 /Страница завершения заказа
 */
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
