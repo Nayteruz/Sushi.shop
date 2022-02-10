@@ -1987,6 +1987,9 @@ html.hidden-scroll {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none; }
+  @media all and (max-width: 768px) {
+    .popup-wrap {
+      height: 99%; } }
 
 .popup-wrap .popup-block {
   width: 100%;
@@ -1994,6 +1997,9 @@ html.hidden-scroll {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media all and (max-width: 768px) {
+    .popup-wrap .popup-block {
+      height: auto; } }
 
 .popup-wrap .popup-block-inner {
   width: 100%;
