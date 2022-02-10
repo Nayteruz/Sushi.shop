@@ -1966,7 +1966,7 @@ a.item-name {
     grid-template-columns: repeat(3, 1fr); } }
 /* всплывающий блок */
 html.hidden-scroll {
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   touch-action: none;
   -ms-touch-action: none; }
@@ -3399,9 +3399,6 @@ html.hidden-scroll {
 
   .slider-list a .text-info h3.title {
     font-size: 32px; } }
-@supports (-webkit-touch-callout: none) {
-  .cart-popup-wr .cart-popup {
-    padding-bottom: 70px; } }
 @media all and (max-width: 480px) {
   .site-header {
     min-height: 68px; }
@@ -3411,7 +3408,7 @@ html.hidden-scroll {
 
   .menu-button .menu-popup {
     top: 68px;
-    max-height: calc(100vh - 68px); }
+    max-height: calc(100% - 68px); }
 
   .cart-top .cart-popup-wr {
     top: 0px; }
@@ -3443,7 +3440,7 @@ html.hidden-scroll {
     padding-right: 5px; }
 
   .cart-popup-wr .cart-popup {
-    max-height: 100vh; }
+    max-height: 100%; }
 
   .popup-wrap .popup-block {
     padding-top: 68px; }

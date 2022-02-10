@@ -4039,11 +4039,7 @@ html.hidden-scroll {
         font-size: 32px;
     }
 }
-@supports (-webkit-touch-callout: none) {
-    .cart-popup-wr .cart-popup {
-        padding-bottom: 70px;
-    }
-}
+
 
 @media all and (max-width: 480px) {
     .site-header {
@@ -4054,7 +4050,7 @@ html.hidden-scroll {
     }
     .menu-button .menu-popup {
         top: 68px;
-        max-height: calc(100vh - 68px);
+        max-height: calc(100% - 68px);
     }
 
     .cart-top .cart-popup-wr {
@@ -4087,7 +4083,7 @@ html.hidden-scroll {
         padding-right: 5px;
     }
     .cart-popup-wr .cart-popup {
-        max-height: 100vh;
+        max-height: 100%;
 
     }
     .popup-wrap .popup-block {
