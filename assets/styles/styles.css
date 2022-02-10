@@ -1971,7 +1971,7 @@ html.hidden-scroll {
   touch-action: none;
   -ms-touch-action: none; }
   html.hidden-scroll body {
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     touch-action: none;
     -ms-touch-action: none; }

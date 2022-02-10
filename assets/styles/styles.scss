@@ -2397,12 +2397,12 @@ a.item-name {
 
 /* всплывающий блок */
 html.hidden-scroll {
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     touch-action: none;
     -ms-touch-action: none;
     body {
-        overflow: hidden;
+        overflow: auto;
         position: relative;
         touch-action: none;
         -ms-touch-action: none;
