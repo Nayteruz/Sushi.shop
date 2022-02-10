@@ -2422,6 +2422,7 @@ html.hidden-scroll {
     display: none;
     @media all and (max-width:768px){
         height: 99%;
+        transform: translate3d(0,0,0);
     }
 
 }

@@ -1989,7 +1989,8 @@ html.hidden-scroll {
   display: none; }
   @media all and (max-width: 768px) {
     .popup-wrap {
-      height: 99%; } }
+      height: 99%;
+      transform: translate3d(0, 0, 0); } }
 
 .popup-wrap .popup-block {
   width: 100%;
