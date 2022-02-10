@@ -2470,6 +2470,10 @@ html.hidden-scroll {
     width: 90px;
     height: 58px;
     //z-index: 2;
+    @media all and (max-width:768px){
+        position: fixed;
+    }
+
 }
 
 .popup-wrap .pop-close-button > span {

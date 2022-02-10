@@ -2026,6 +2026,9 @@ html.hidden-scroll {
   border-radius: 15px;
   width: 90px;
   height: 58px; }
+  @media all and (max-width: 768px) {
+    .popup-wrap .pop-close-button {
+      position: fixed; } }
 
 .popup-wrap .pop-close-button > span {
   display: block;
