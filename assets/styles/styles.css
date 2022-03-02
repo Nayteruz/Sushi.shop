@@ -3117,6 +3117,7 @@ html.hidden-scroll {
     max-height: calc(100% - 100px); }
 
   .menu-list-folders {
+    padding: 0;
     margin: 0;
     list-style: none;
     display: flex;
@@ -3204,7 +3205,7 @@ html.hidden-scroll {
 
   .menu-list-folders .item-folder.active > ul.sub-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     background: #fff; }
 
   .menu-list-folders .item-folder.active > a.item-menu {
