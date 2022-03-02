@@ -824,7 +824,7 @@ a.logo img {
   border-radius: 10px;
   box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.18);
   min-height: 133px;
-  max-height: calc(100vh - 100px);
+  max-height: calc(100% - 100px);
   overflow-y: auto; }
 
 .cart-top.not-empty .cart-popup-wr .cart-popup {
@@ -2998,7 +2998,7 @@ html.hidden-scroll {
     top: 100px;
     margin: 0;
     width: auto;
-    max-height: 100%;
+    max-height: calc(100% - 100px);
     overflow: auto; }
 
   .cart-top .cart-popup-wr .cart-popup {
@@ -3411,7 +3411,9 @@ html.hidden-scroll {
     max-height: calc(100% - 68px); }
 
   .cart-top .cart-popup-wr {
-    top: 0px; }
+    top: 0px;
+    height: 100%;
+    max-height: 100%; }
 
   .cart-top .cart-popup-wr:before {
     display: none; }
