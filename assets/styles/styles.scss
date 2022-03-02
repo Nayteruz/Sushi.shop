@@ -1028,7 +1028,7 @@ a.logo img {
     border-radius: 10px;
     box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.18);
     min-height: 133px;
-    max-height: calc(100% - 100px);
+    max-height: calc(100vh - 100px);
     overflow-y: auto;
 }
 
@@ -3539,6 +3539,7 @@ html.hidden-scroll {
         margin-left: 30px;
         margin-right: 30px;
     }
+
     .header .menu-button .menu-popup .city-icon {
         padding-left: 30px;
         padding-right: 30px;
@@ -3610,7 +3611,7 @@ html.hidden-scroll {
         top: 100px;
         margin: 0;
         width: auto;
-        max-height: calc(100% - 100px);
+        max-height: 100%;
         overflow: auto;
     }
     .cart-top .cart-popup-wr .cart-popup {
@@ -4054,8 +4055,6 @@ html.hidden-scroll {
 
     .cart-top .cart-popup-wr {
         top: 0px;
-        height: 100%;
-        max-height: 100%;
     }
     .cart-top .cart-popup-wr:before {
         display: none;
