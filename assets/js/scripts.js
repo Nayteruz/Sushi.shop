@@ -521,34 +521,31 @@ function sliderPageCart(wr) {
 			dots: false,
 			arrows: true,
 			infinite: false,
-			slidesToShow: 3,
+			slidesToShow: 5,
 			slidesToScroll: 1,
 			responsive: [
 				{
 					breakpoint: 901,
 					settings: {
-						slidesToShow: 2,
+						slidesToShow: 3,
 					}
 				},
 				{
 					breakpoint: 769,
 					settings: {
 						slidesToShow: 2,
-						arrows: false,
 					}
 				},
 				{
 					breakpoint: 481,
 					settings: {
 						slidesToShow: 1,
-						arrows: false,
 					}
 				},
 				{
 					breakpoint: 0,
 					settings: {
 						slidesToShow: 1,
-						arrows: false,
 					}
 				},
 			]
