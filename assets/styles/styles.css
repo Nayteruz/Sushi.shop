@@ -1381,12 +1381,6 @@ a.logo img {
   .folder-slider-wrap .slick-arrow .slick-disabled {
     display: none !important; }
 
-.folder-slider-wrap .slick-arrow.slick-next:before {
-  background: url(../img/folder-arr.png) right center no-repeat; }
-
-.folder-slider-wrap .slick-arrow.slick-next:hover:before {
-  background: url(../img/folder-arr-hover.png) right center no-repeat; }
-
 /* Слайдер в шапке */
 .top-slider-wr {
   margin: 0px 0px 0px 0px; }
@@ -2887,7 +2881,16 @@ html.hidden-scroll {
   .list-items .items {
     grid-template-columns: repeat(2, 1fr); }
 
-  .contacts-info .phones-bottom .phone .tel-info,
+  .contacts-info .phones-bottom .phone span {
+    display: none; }
+
+  .contacts-info .phones-bottom .phone {
+    flex-wrap: wrap;
+    flex-direction: column; }
+
+  .contacts-info .phones-bottom .phone:nth-child(2) span {
+    display: block; }
+
   .contacts-info .buttons,
   .site-name-footer a.logo-bottom {
     display: none; }
@@ -3376,6 +3379,10 @@ html.hidden-scroll {
     align-items: center;
     border-top: none; } }
 @media all and (max-width: 500px) {
+  .contacts-info .phones-bottom .phone {
+    align-items: center;
+    gap: 5px; }
+
   .list-items .items {
     grid-template-columns: 1fr; }
 

@@ -3495,7 +3495,19 @@ html.hidden-scroll {
     .list-items .items {
         grid-template-columns: repeat(2, 1fr);
     }
-    .contacts-info .phones-bottom .phone .tel-info,
+    .contacts-info .phones-bottom .phone span {
+        display: none;
+    }
+    .contacts-info .phones-bottom .phone {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .contacts-info .phones-bottom .phone:nth-child(2) {
+        span {
+            display: block;
+        }
+    }
+
     .contacts-info .buttons,
     .site-name-footer a.logo-bottom {
         display: none;
@@ -4034,6 +4046,10 @@ html.hidden-scroll {
 }
 
 @media all and (max-width: 500px) {
+    .contacts-info .phones-bottom .phone {
+        align-items: center;
+        gap:5px;
+    }
     .list-items .items {
         grid-template-columns:1fr;
     }
