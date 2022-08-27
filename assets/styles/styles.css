@@ -1330,11 +1330,9 @@ a.logo img {
   font-size: 13px;
   line-height: normal;
   margin: 0px 10px 10px; }
-
 .folder-slider-list a.item-folder .name-w {
   visibility: hidden;
   display: block; }
-
 .folder-slider-list a.item-folder .name-v {
   position: absolute;
   left: 0;
@@ -1342,7 +1340,6 @@ a.logo img {
   top: 0;
   text-align: center;
   font-weight: 300; }
-
 .folder-slider-list a.item-folder:hover .name-v {
   font-weight: 800; }
 
@@ -1361,35 +1358,34 @@ a.logo img {
   outline: none;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.1);
   padding: 0; }
-
-.folder-slider-wrap .slick-arrow:before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 9px;
-  height: 16px;
-  transform: translate(-50%, -50%);
-  background: url(../img/folder-arr.png) 0 50% no-repeat; }
-
-.folder-slider-wrap .slick-arrow:hover:before {
-  background: url(../img/folder-arr-hover.png) 0 50% no-repeat; }
-
-.folder-slider-wrap .slick-arrow.slick-prev {
-  left: 30px; }
-
-.folder-slider-wrap .slick-arrow.slick-next {
-  right: 30px; }
+  .folder-slider-wrap .slick-arrow:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 9px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+    background: url(../img/folder-arr.png) 0 50% no-repeat; }
+  .folder-slider-wrap .slick-arrow:hover:before {
+    background: url(../img/folder-arr-hover.png) 0 50% no-repeat; }
+  .folder-slider-wrap .slick-arrow .slick-prev {
+    left: 30px; }
+  .folder-slider-wrap .slick-arrow .slick-next {
+    right: 30px; }
+    .folder-slider-wrap .slick-arrow .slick-next:before {
+      background: url(../img/folder-arr.png) right center no-repeat; }
+    .folder-slider-wrap .slick-arrow .slick-next:hover:before {
+      background: url(../img/folder-arr-hover.png) right center no-repeat; }
+  .folder-slider-wrap .slick-arrow .slick-disabled {
+    display: none !important; }
 
 .folder-slider-wrap .slick-arrow.slick-next:before {
   background: url(../img/folder-arr.png) right center no-repeat; }
 
 .folder-slider-wrap .slick-arrow.slick-next:hover:before {
   background: url(../img/folder-arr-hover.png) right center no-repeat; }
-
-.folder-slider-wrap .slick-arrow.slick-disabled {
-  display: none !important; }
 
 /* Слайдер в шапке */
 .top-slider-wr {
@@ -1559,7 +1555,7 @@ a.logo img {
     display: none;
     background: url(../img/arror-top.svg) 50% 50% no-repeat;
     width: 30px;
-    height: 6px;
+    height: 20px;
     margin-bottom: 3px; }
     @media all and (max-width: 640px) {
       .title-list a {
