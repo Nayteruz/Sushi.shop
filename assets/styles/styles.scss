@@ -3495,12 +3495,10 @@ html.hidden-scroll {
     .list-items .items {
         grid-template-columns: repeat(2, 1fr);
     }
-    .contacts-info .phones-bottom .phone span {
-        display: none;
-    }
     .contacts-info .phones-bottom .phone {
         flex-wrap: wrap;
         flex-direction: column;
+        gap:5px;
     }
     .contacts-info .phones-bottom .phone:nth-child(2) {
         span {
