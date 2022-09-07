@@ -6296,6 +6296,9 @@ h1.title {
   align-items: center;
   gap: 10px;
   margin-top: 19px; }
+  @media all and (max-width: 600px) {
+    .site-content-wrap.cart-page .form-row-submit {
+      flex-direction: column; } }
   .site-content-wrap.cart-page .form-row-submit .send-order {
     background: #d64e54;
     text-transform: uppercase;

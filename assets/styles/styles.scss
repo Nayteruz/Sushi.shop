@@ -7690,6 +7690,11 @@ h1.title {
         gap:10px;
         margin-top: 19px;
 
+        @media all and(max-width:600px){
+            flex-direction: column;
+
+        }
+
         .send-order {
             background: #d64e54;
             text-transform: uppercase;
